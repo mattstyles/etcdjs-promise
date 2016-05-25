@@ -1,0 +1,28 @@
+{
+  "name": "etcdjs-promise",
+  "version": "0.0.0",
+  "description": "Simplified promise-based api for etcd",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava spec/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattstyles/etcdjs-promise.git"
+  },
+  "keywords": [
+    "etcd",
+    "promise"
+  ],
+  "author": "Matt Styles <matt@veryfizzyjelly.com> (http://github.com/mattstyles)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mattstyles/etcdjs-promise/issues"
+  },
+  "homepage": "https://github.com/mattstyles/etcdjs-promise#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.15.0",
+    "etcdjs": "^2.4.1"
+  }
+}
