@@ -2,7 +2,6 @@
 function promisify( name, etcd ) {
   return function() {
     return new Promise( ( resolve, reject ) => {
-      console.log( name )
       etcd[ name ].call( etcd, ...arguments, function( err, res ) {
         if ( err ) {
           reject( err )
@@ -27,7 +26,6 @@ var EtcdPromise = function( etcd ) {
   }
 
   manifest.forEach( method => {
-    console.log( 'setting', method )
     this[ method ] = promisify( method, etcd )
   })
 }

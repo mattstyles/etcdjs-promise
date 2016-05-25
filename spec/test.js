@@ -30,7 +30,7 @@ test( 'should set a value in the store', async t => {
   await store.del( 'quux' )
 })
 
-test.only( 'should delete a value from the store', async t => {
+test( 'should delete a value from the store', async t => {
   const store = EtcdPromise( etcd )
 
   await store.set( 'fred', 'bar' )
